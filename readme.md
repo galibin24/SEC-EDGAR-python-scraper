@@ -1,4 +1,5 @@
 About the project
+
     The main idea of project is to make efficient fundamental data scraper which will provide accuratly sorted financial information.
 
     At the current state the scraper is a fully functioning and written using Scrapy library.

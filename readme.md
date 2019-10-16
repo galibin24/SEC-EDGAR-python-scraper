@@ -4,7 +4,6 @@ About the project
    
    At the current state the scraper is a fully functioning and written using Scrapy library.
         The data is scrapped only from 2011 onwards.
-        Only the main financial statments are scraped.
 
    The main issue at the moment is improving the accuracy of sorting and parsing methods.  
 

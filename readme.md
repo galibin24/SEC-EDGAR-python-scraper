@@ -1,4 +1,4 @@
-About the project
+# About this project 
 
    The main idea of project is to make efficient fundamental data scraper which will provide accurately sorted financial information.
    
@@ -7,19 +7,28 @@ About the project
 
    The main issue at the moment is improving the accuracy of sorting and parsing methods.  
 
-Installation
+## Getting Started
+   Copy the repository 
    Install requirement.txt using pip
   
    To scrape data run scraper.py and pass symbols of companies you want to scrape.
     
         python scraper.py AAPL AMZN FB
+        
    The scraped files are stored in scraped folder 
 
    To parse all scraped files just run parser.py
         Parsed files stored inside parsed folder and it also creates one single file for each statement inside All folder.
 
+
+## Contribution
 I am actively seeking contributors to improve efficiency, structure and functionality.
 
+## A note 
 Also, I am third year finance major, and been learning programming for less than a year, therefore the code inefficiencies and the structure might look out of place as I am not familiar with many programming convensions. 
 
-This project is licensed under the terms of the MIT license."# SEC-EDGAR-python-scraper" 
+## License
+
+This project is licensed under the terms of the MIT license.
+
+"# SEC-EDGAR-python-scraper" 

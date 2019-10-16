@@ -8,8 +8,7 @@
    The main issue at the moment is improving the accuracy of sorting and parsing methods.  
 
 ## Getting Started
-   Copy the repository 
-   Install requirement.txt using pip
+   Copy the repository and Install requirement.txt using pip
   
    To scrape data run scraper.py and pass symbols of companies you want to scrape.
     

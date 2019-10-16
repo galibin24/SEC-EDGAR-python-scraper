@@ -17,7 +17,10 @@
    The scraped files are stored in scraped folder 
 
    To parse all scraped files just run parser.py
-        Parsed files stored inside parsed folder and it also creates one single file for each statement inside All folder.
+      ```
+         parser.py
+      ```
+   Parsed files stored inside parsed folder and it also creates one single file for each statement inside All folder.
 
 
 ## Contribution

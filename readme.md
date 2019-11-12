@@ -13,7 +13,9 @@
    Copy the repository and Install requirement.txt using pip
   
    To scrape data run scraper.py and pass symbols of companies you want to scrape and year.
-        python scraper.py
+      ```
+         python scrape.py
+      ```.
         
    The scraped files are stored in scraped folder 
 

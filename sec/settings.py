@@ -9,6 +9,12 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+# ROTATED_PROXY_ENABLED = True
+# PROXY_STORAGE = 'scrapy_rotated_proxy.extensions.file_storage.FileProxyStorage'
+
+# ROTATING_PROXY_LIST_PATH   = './httpproxies.txt'
+# PROXY_MODE = 0
+
 BOT_NAME = 'sec'
 
 SPIDER_MODULES = ['sec.spiders']
@@ -19,12 +25,14 @@ NEWSPIDER_MODULE = 'sec.spiders'
 #USER_AGENT = 'sec (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 20
 
 # Configure a delay for requests for the same website (default: 0)
+# DOWNLOAD_DELAY = 0.2
+
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
 #DOWNLOAD_DELAY = 3
@@ -33,8 +41,18 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# COOKIES_ENABLED = False
 
+
+# DOWNLOADER_MIDDLEWARES = {
+#     'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
+#     'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
+# }
+
+# DOWNLOADER_MIDDLEWARES.update({
+#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
+#     'scrapy_rotated_proxy.downloadmiddlewares.proxy.RotatedProxyMiddleware': 750,
+# })
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 

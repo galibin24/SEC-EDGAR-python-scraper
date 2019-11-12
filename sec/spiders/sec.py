@@ -17,10 +17,11 @@ import urllib.request
 class MainSpider(CrawlSpider):
     name = 'sec'
 
-    def __init__(self, company='',start_url = '' ,*args, **kwargs): 
+    def __init__(self, year = '', company='',start_url = '' ,*args, **kwargs): 
         super(MainSpider, self).__init__(*args, **kwargs) 
         self.start_urls = start_url
         self.company = company
+        self.year = year
         
     def start_requests(self):
         for url in self.start_urls:
@@ -39,7 +40,7 @@ class MainSpider(CrawlSpider):
 
         for date in soup.select('#main-content table tr td:nth-of-type(3)'):
             d = date.get_text()[0:10]
-            if int(d[0:4]) >= 2010:
+            if int(d[0:4]) >= self.year:
                 dates.append(d)
             
         length = (len(dates))

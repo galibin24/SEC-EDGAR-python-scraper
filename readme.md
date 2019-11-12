@@ -12,7 +12,7 @@
 ## Getting Started
    Copy the repository and Install requirement.txt using pip
   
-   To scrape data run scraper.py and pass symbols of companies you want to scrape and year.
+   To scrape data run scraper.py and pass symbols of companies you want to scrape and year
       ```
          python scrape.py
       ```.
